@@ -123,8 +123,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~bulma/sass/utilities/variables';
-@import '~bulma/sass/utilities/mixins';
+// Gulp / Elixir / Sass has issues with these import statements.
+// So I forked and deleted this.
+// @import '~bulma/sass/utilities/variables';
+// @import '~bulma/sass/utilities/mixins';
 
 .notifications {
   position: fixed;
@@ -133,9 +135,9 @@ export default {
   z-index: 1024 + 233;
   pointer-events: none;
 
-  @include tablet() {
-    max-width: 320px;
-  }
+//  @include tablet() {
+//    max-width: 320px;
+//  }
 
   .notification {
     margin: 20px;
